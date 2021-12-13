@@ -1,0 +1,130 @@
+:root {
+    --white: #fff;
+    --dk-blue: #0d1238;
+    --lt-blue: #272f70;
+    --dk-green: #374d12;
+    --lt-green: #54761b;
+
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(../img/oriental-tiles.png);
+    color: var(--white)
+}
+
+/* typography */
+
+h1 {
+    font-family: serif;
+    font-size: 3rem; 
+    margin-bottom: 1.5rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+section {
+    margin-top: 5.25rem;
+    background-color: rgba(13,18,56,0.7);
+    padding: 1rem;
+}
+
+fieldset {
+    padding: 0;
+    background-color: var(--white);
+    color: var(--dk-blue);
+    border: none;
+    border-radius: 0.3125rem;
+}
+
+fieldset > p {
+    padding: 0.75rem 1rem;
+    color: var(--white);
+    background-color: var(--lt-green);
+    text-align: center;
+    border-radius: 0.3125rem 0.3125rem 0 0;
+}
+
+fieldset > div {
+    padding: 0 0.75rem;
+}
+
+label {
+    display: block;
+}
+
+input {
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid #a2adb7;
+    background-color: #edeff0;
+    
+}
+
+.area-of-interest div{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+input[type=radio] {
+    width: initial;
+    height: auto;
+    margin-right: 0.3125rem;
+
+}
+
+input[type="submit"]{
+    color: var(--white);
+    background-color: var(--lt-blue);
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--dk-blue);
+    cursor: pointer;
+}
+
+fieldset a {
+    color: var(--lt-green);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+fieldset a:hover {
+    color: var(--dk-green);
+}
+
+@media only screen and (min-width: 43.75rem){
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .flex-container > div {
+        flex-basis: 49%;
+    }
+
+    .flex-container p {
+        flex-basis: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 62.5rem){
+    section {
+        display: flex;
+        margin: 5.25rem auto;
+    }
+
+    form {
+        min-width: 50vw;
+        margin-left: 1.875rem;
+    }
+}

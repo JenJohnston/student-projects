@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Grid Container */
+
+.grid-container {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* header styling*/
+
+header {
+    background-color: #e7b181;
+    color: #fff;
+}
+
+header h1 {
+    padding: 0.5rem 1rem;
+    font-size: 1.35rem;
+}
+
+/* Aside and img styling */
+
+aside img {
+    margin-bottom: 1rem;
+}
+
+/* Section styling*/
+
+section h2 {
+    font-size: 1.17rem;
+}
+
+section p {
+    margin-bottom: 1rem;
+}
+
+/* footer and footer links styling*/
+
+footer {
+    background-color: #e7b181;
+}
+
+footer ul li {
+    text-align: center;
+    background-color: #fff;
+    margin: 0.75rem 0.5rem;
+    border-radius: 4px;
+
+}
+
+footer ul li a{
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    color: #0f0f0f;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* Media Queries*/
+
+@media screen and (min-width: 520px) {
+
+    /* a multi column layout is added via column-count to create two rows of text and give the design a "newspaper feel"*/
+    .column-container {
+        column-count: 2;
+    } 
+
+    /* By using flexbox with flex-wrap and a flex property of 1, we can grow the child elements to fill the entire space of the flex container in equal proportions.  Adding a min width to the child elements allows the links to stack on top of each other and keep the buttons a consistent size for good UI.*/
+
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    footer ul li {
+        flex: 1;
+        min-width: 45%;
+    }
+}
+
+/* Adjusting our grid to a two column layout for slightly larger devices, this ensures that the images do not become too large and ruin the visual hiearchy of the site, making the content easier to read for the users*/
+
+@media screen and (min-width: 700px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header {
+        grid-column: 1 / -1;
+    }
+
+    footer {
+        grid-column: 1 / -1;
+    }
+}
+
+/* adjusting our grid to a four column layout, the first columns width is set to auto so the width is determined by the content of the header. The other three columns take up the rest of the space evenly and the layout is set to the mockup for large viewports*/
+
+@media screen and (min-width: 940px){
+
+    .grid-container {
+        grid-template-columns: auto 1fr 1fr 1fr;
+    }
+
+    header {
+        grid-column: 1;
+        writing-mode: vertical-lr;
+    }
+
+    section {
+        grid-column: 3 / span 2;
+    }
+
+    footer {
+        grid-column: 1 / -1;
+    }
+    footer ul li {
+        min-width: 23%;
+    }
+}

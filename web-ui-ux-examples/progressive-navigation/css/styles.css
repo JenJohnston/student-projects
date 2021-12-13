@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    color: #0f0f0f;
+}
+
+header {
+    background-color: #734440;
+    padding: 1rem 0;
+}
+
+/* Logo Styling */
+
+.logo {
+    background-color: #BF463B;
+    max-height: 3.125rem;
+    padding-top: 0.55rem;
+}
+
+.logo a {
+    color: #fefefe;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.45rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Nav Menu and Nav Links styling*/
+
+nav {
+    max-height: 3.125rem;
+    background-color: #261212;
+    display: flex;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+ul.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    white-space: nowrap;
+    line-height: 3.125rem;
+    margin: 0 0.85rem;
+}
+
+.nav-links a {
+    color: #fefefe;
+    font-weight: bold;
+}
+
+/* Nav Button Styling */
+
+.nav-button {
+    background-color: #11D9B4;
+    color: #261212;
+    font-weight: bold;
+    border: 1px solid #BFA3A3;
+    height: 2.75rem;
+    margin-top: 0.175rem;
+    margin-right: 0.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* class that will show all of the nav links*/
+
+.show-nav-links {
+    max-height: 24vh;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>A History of CSS</title>
+</head>
+<body>
+  <header>
+    <figure>
+      <img src="img/two-layouts-tweet.png" alt="Two Wireframes">
+      <figcaption class="caption">
+        Which one of the two possible websites are you currently designing?
+      </figcaption>
+    </figure>
+    <div class="header-content">
+      <h1>
+        A History of CSS Through Fifteen Years of 24 ways
+      </h1>
+
+      <address>
+        <span class="author">
+          by Racheal Andrew • December 16, 2019
+        </span> 
+        Content excerpts from the original publication on 
+        <a href="https://24ways.org/2019/a-history-of-css-through-15-years-of-24-ways/">
+          https://24ways.org/
+        </a>
+      </address>
+    
+      <p>
+        I’ve written nine articles in the 15 years of 24 ways, and all but one of those articles had something to do with CSS. In this last year of the project, I thought I would take a look back at those CSS articles. It’s been an interesting journey, and by reading through my words from the last 15 years I discovered not only how much the web platform has evolved - but how my own thinking has shifted with it.
+      </p>
+    </div>
+  </header>
+  <div class="flex-container">
+    <section>
+      <h2>
+        2005: CSS layout starting points
+      </h2>
+        
+      <p>
+        Latest web browser versions: Internet Explorer 6 (at this point 4 years old), IE5.1 Mac, Netscape 8, Firefox 1.5, Safari 2
+      </p>
+        
+      <p>
+        Fifteen years ago, my contributions to 24 ways started with a piece about CSS layout. That article explored something I had been using in my own work. In 2005, most of the work I was doing was building websites from Photoshop files delivered to me by my design agency clients. I’d built up a set of robust, tried-and-tested CSS layouts to use to implement these. My starting point when approaching any project was to take a look at the static comps and figure out which layout I would use:
+      </p>
+        
+      <ul>
+        <li>
+          Liquid, multiple column with no footer
+        </li>
+        <li>
+          Liquid, multiple column with footer
+        </li>
+        <li>
+          Fixed width, centred
+        </li>
+      </ul>
+        
+      <p>
+        At that point, there were still many sites being shipped with table-based layouts. We had learned how to use floats to create columns some four years earlier, however layout was still a difficult and often fragile thing. By developing patterns that I knew worked, where I had figured out any strange bugs, I saved myself a lot of time.
+      </p>
+    </section>
+    <section>
+
+      <h2>
+        2006: Faster Development with CSS Constants
+      </h2>
+
+      <p>
+        Latest web browser versions: Internet Explorer 7, Netscape 8.1, Firefox 2, Safari 2
+      </p>
+        
+      <p>
+        My article in 2006 was once again taken from the work I was doing as a developer. I’ve always been as much, if not more of a backend developer than a frontend one. In 2006, I was working in PHP on custom CMS implementations. These would also usually include the front-end work. Along with several other people in the industry I’d been experimenting with ways to use CSS “constants” as we all seemed to call them, by processing the CSS with our server-side language of choice.
+      </p>
+        
+      <p>
+        The use case was mostly for development, although as a CMS developer, I could see the potential of allowing these values to be updated via the CMS. Perhaps to allow a content editor to change a color scheme..
+      </p>
+        
+      <p>
+        Also in 2006, the first version of Sass was released, created by Hampton Catlin and Natalie Weizenbaum. Sass, LESS and other pre-processors began to give us a more streamlined and elegant way to achieve variables in CSS.
+      </p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Focusing on just the html form elements.
+
+- The form elements that need to be added within the fieldset are:
+    - first Name field
+    - last name field
+    - email Address field
+    - Password field
+
+    - Radio button selection
+    - Pick your area of interest (hint: <p>)
+        - UI/UX
+        - HTML & CSS
+        - Javascript
+        - PHP
+
+    - submit button with the text "Claim Your Free Trial"
+    - after the submit there is text below that says, "By signing up you are agreeing to our Terms of Service." Where Terms of service is a link.

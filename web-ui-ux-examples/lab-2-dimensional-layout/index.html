@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>CSS Grid</title>
+</head>
+<body>
+    <div class="grid-container">
+        <header>
+            <h1>Clean Code ~ Complex Designs</h1>
+        </header>
+        <aside>
+            <img src="img/an-orange-basket.jpg" alt="Orange Basket">
+            <img src="img/man-walking-by-orange.jpg" alt="Orange Wall">
+        </aside>
+        <section>
+            <h2>There are so many ways to start</h2>
+            <div class="column-container">
+                <p>In all of the excitement about CSS Grid Layout and Flexbox, another layout method is often overlooked. In this article I’m going to take a look at Multi-column Layout — often referred to as multicol or sometimes “CSS Columns”. You’ll find out which tasks it is suited for, and some of the things to watch out for when making columns.</p>
+                <p>The basic idea of multicol, is that you can take a chunk of content and flow it into multiple columns, as in a newspaper. You do this by using one of two properties. The column-count property specifies the number of columns that you would like the content to break into. The column-width property specifies the ideal width, leaving the browser to figure out how many columns will fit.</p>
+                <p>It doesn’t matter which elements are inside the content that you turn into a multicol container, everything remains in normal flow, but broken into columns. This makes multicol unlike other layout methods that we have in browsers today. Flexbox and Grid for example, take the child elements of the container and those items then participate in a flex or grid layout. With multicol, you still have normal flow, except inside a column.</p>
+            </div>
+        </section>
+        <footer>
+            <ul class="footer-links">
+                <li><a href="https://www.smashingmagazine.com/2019/01/css-multiple-column-layout-multicol/">Article Source</a></li>
+                <li><a href="https://gridbyexample.com/">Grid by Example</a></li>
+                <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Tricks Guide to Grid</a></li>
+                <li><a href="https://cssgridgarden.com/">CSS Grid Garden</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+    background-color: #0f0f0f;
+}
+
+/* header styling*/
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    color: #f8f8ff;
+    margin-left: 1rem;
+}
+
+/* Hamburger Icon */
+
+.nav-toggle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    border: 3px solid #f8f8ff;
+    border-radius: 50%;
+}
+
+.nav-btn {
+    width: 2rem;
+    height: 4px;
+    background-color: #f8f8ff;
+    border-radius: 0.35rem;
+    box-shadow: 0 2px 5px rgba(27, 1, 64, 1);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-btn::before,
+.nav-btn::after{
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 4px;
+    background-color: #f8f8ff;
+    border-radius: 0.35rem;
+    box-shadow: 0 2px 5px rgba(27, 1, 64, 1);
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-btn::before {
+    transform: translateY(-0.65rem)
+}
+
+.nav-btn::after {
+    transform: translateY(0.65rem)
+}
+
+/* Hamburger Animation */
+
+.nav-toggle.open .nav-btn {
+    transform: translateX(-1.5rem);
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav-toggle.open .nav-btn::before {
+    transform: rotate(45deg) translate(1rem, -1rem)
+}
+
+.nav-toggle.open .nav-btn::after {
+    transform: rotate(-45deg) translate(1rem, 1rem)
+}
+
+/* nav menu and links */
+
+.toggle-container {
+    padding: 1.5rem
+}
+
+.nav-bar {
+    margin-top: 2rem;
+    z-index: 1;
+    position: fixed;
+    top: 4rem;
+    left: -20rem;
+    width: 20rem;
+    background-color: #0f0f0f;
+    transition: all 0.5s ease-in-out;
+    padding: 1.5rem;
+}
+
+.navlinks {
+    padding: 0.65rem 0;
+    font-size: 1.25rem;
+}
+
+.navlinks a {
+    color: #f8f8ff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: medium;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+}
+
+.navlinks a:hover {
+    color: aquamarine;
+}
+
+/* displays the nav bar */
+
+.show-nav {
+    left: 0rem;
+}
+
+@media(min-width: 900px){
+    .nav-toggle {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-bar {
+        margin-top: 0;
+        position: static;
+        left: 0;
+        width: 50rem;
+    }
+
+    .navmenu {
+        display: flex;
+        justify-content: space-around;
+       
+    }
+
+}

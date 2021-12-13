@@ -1,0 +1,31 @@
+/* Color Theme Swatches in Hex */
+.Starry-Night-Theme-1-hex { color: #293CA6; }
+.Starry-Night-Theme-2-hex { color: #072359; }
+.Starry-Night-Theme-3-hex { color: #0A2D73; }
+.Starry-Night-Theme-4-hex { color: #041E40; }
+.Starry-Night-Theme-5-hex { color: #031626; }
+
+/* Color Theme Swatches in RGBA */
+.Starry-Night-Theme-1-rgba { color: rgba(40, 59, 165, 1); }
+.Starry-Night-Theme-2-rgba { color: rgba(7, 35, 89, 1); }
+.Starry-Night-Theme-3-rgba { color: rgba(10, 45, 114, 1); }
+.Starry-Night-Theme-4-rgba { color: rgba(4, 29, 63, 1); }
+.Starry-Night-Theme-5-rgba { color: rgba(2, 21, 38, 1); }
+
+/* Color Theme Swatches in HSLA */
+.Starry-Night-Theme-1-hsla { color: hsla(230, 60, 40, 1); }
+.Starry-Night-Theme-2-hsla { color: hsla(219, 85, 18, 1); }
+.Starry-Night-Theme-3-hsla { color: hsla(219, 83, 24, 1); }
+.Starry-Night-Theme-4-hsla { color: hsla(213, 88, 13, 1); }
+.Starry-Night-Theme-5-hsla { color: hsla(207, 85, 8, 1); }
+
+.button-color {
+    /* Purple 600 */
+    color: #9333EA;
+
+    /* Violet 700 */
+    color: #6D28D9;
+
+    /* Blue Gray 50 */
+    color: #F8FAFC;
+}

@@ -1,0 +1,82 @@
+:root {
+    --cream: #e5e1db;
+    --yellow: #cfb450;
+    --grey: #6b6267;
+    --lt-grey: #d2cfd1;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Typography */
+
+header {
+    background-color: var(--cream);
+    padding: 0 1rem;
+}
+
+.search-form,
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: none;
+}
+
+.sr-only {
+    position: absolute;
+    left: -1000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+}
+
+button,
+input[type=submit] {
+    background-color: var(--grey);
+    color: var(--cream);
+    border: none;
+    border-radius: 0.3125rem;
+    padding: 0.3125rem 0.625rem;
+    cursor: pointer;
+}
+
+input[id=searchbar] {
+    width: 100%;
+    padding: 0.3125rem;
+    border: none;
+    border-radius: 0.3125rem;
+    background-image: url(../img/magnifying-glass.svg);
+    background-repeat: no-repeat;
+    background-size: 1.8rem 1.8rem;
+    background-position: center left 0.3125rem;
+    padding-left: 2.75rem;
+}
+
+.login-form {
+    padding: 1.5rem;
+    margin: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px var(--lt-grey);
+    border: 1px solid var(--lt-grey);
+}
+
+.login-form label {
+    display: block;
+}
+
+.login-form > div {
+    margin-bottom: 0.75rem;
+}
+
+.login-form input[type=email],
+.login-form input[type=password] {
+    padding: 0.5rem;
+    width: 14.375rem;
+    border: none;
+    border-bottom: 1px solid var(--lt-grey);
+}
