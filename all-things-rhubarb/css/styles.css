@@ -1,0 +1,418 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Mrs Sheppards', cursive; */
+
+body {   
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 60em;
+    margin: 0 auto;
+}
+
+
+/* Nav Bar Styling */
+
+.navbar {
+    background-color: #000;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 52%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#nav-logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,#e95354 0%, #be142f 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.6rem;
+}
+
+.fa-seedling {
+    margin-right: 0.5rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.nav-item{
+    height: 80px;
+}
+
+.nav-links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1.1rem;
+    height: 100%;
+}
+
+.nav-links:hover {
+    color: #be142f;
+    transition: all 0.3s ease;
+}
+
+/* HEADER CONTENT STYLING */
+
+header {
+    background-image: url(../img/rhubarb-hero.jpg);
+    background-size: cover; 
+    height:30em;
+    margin-bottom: 4em;
+    box-shadow: 0 1px 2px #000;
+
+}
+
+.medicinal-header {
+    background-image: url(../img/medicinal-page/medicinal-hero.jpg);
+    margin-bottom: 3rem;
+    box-shadow: 0 1px 2px #000;
+    
+}
+
+.growing-rhubarb-header {
+    background-image: url(../img/care/care-guide-hero.jpg);
+    background-position: bottom;
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Mrs Sheppards', cursive;
+    font-size: 6.3em;
+    text-align: center;
+    text-shadow: 4px 4px 8px #000;
+    word-spacing: 0.2em;
+    padding: 1.4em 0;
+}
+
+/* MAIN CONTENT STYLING */
+
+h2 {
+    text-align: center;
+    padding: 1em 1.2em 1.4em 1.2em;
+    font-size: 1.85em;
+    text-shadow: 2px 2px 4px grey;
+}
+
+.quote-text {
+    font-style: italic;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.medicine-page-headings {
+    text-align: left;
+    padding: 0;
+    width: 60rem;
+    height: 2rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px grey;
+    text-decoration: underline;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    display: flex;
+    width: 60rem;
+    margin-bottom: 4rem;
+}
+
+.flex-col img {
+    width: 20rem;
+    height: auto;
+    margin-bottom: 3rem;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.flex-col p {
+    width: 56ch;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    
+}
+
+.flex-col ul {
+    list-style-position: inside;
+    margin-left: 3rem;
+    margin-top: 0.5rem;
+}
+section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: 1;
+}
+
+
+section .col {
+    width: 25em;
+    margin-left: 2.5em;
+}
+
+.col img {
+    display: block;
+    margin: 0 auto;
+    width: 65%;
+    height: auto;
+    box-shadow: 1px 1px 1px grey;
+    border-radius: 50%;
+}
+
+.flex-col-care {
+    display: flex;
+    width: 60rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.flex-col-care img {
+    width: 20rem;
+    height: 15rem;
+    margin-bottom: 3rem;
+    box-shadow: 2px 2px 2px grey;
+    border-radius: 0.3125rem;
+}
+
+.care-h2 {
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.flex-col-care p {
+    width: 56ch;
+    margin-left: 2.5rem;
+    padding-top: 1rem;
+    
+   
+    
+}
+
+
+/* FOOTER CONTENT STYLING */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+footer img {
+    width: 2rem;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+footer p {
+    font-size: 0.8rem;
+    padding: 1rem;
+}
+
+
+/* RESPONSIVE NAVBAR STYLING */
+
+@media only screen and (max-width: 960px) {
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+
+    .nav-menu.active {
+        background-color: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size: 1.6rem;
+    }
+
+    #nav-logo {
+        padding-left: 25px;
+    }
+
+    .nav-toggle .bar {
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;  
+        transition: all 0.3s ease-in-out;  
+        background-color: #fff;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .nav-btn {
+        padding-bottom: 2rem;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;
+    }
+
+    .nav-toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* RESPONSIVE MAIN AND FOOTER CONTENT STYLING */
+
+@media only screen and (max-width: 604px) {
+
+    .flex-col {
+        display: grid;
+        grid-template-columns: auto;
+        width: 60rem;
+        margin-bottom: 4rem;
+        justify-items: center;
+    }
+
+    .flex-col p {
+        margin-left: 5rem;
+    }
+
+    section {
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+
+    section .col {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .col img {
+        width: 25em;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 2.85em;
+    }
+
+    .col p {
+        font-size: 1.75em;
+    }
+
+    footer p {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    section {
+        display: grid;
+        grid-template-columns: auto;
+        
+    }
+
+    
+    section .col {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .col img {
+        width: 26em;
+        height: auto;
+    }
+
+    h2 {
+        font-size: 3.2em;
+    }
+
+    .col p {
+        font-size: 2em;
+    }
+
+    footer p {
+        font-size: 1.2em;
+    }
+}
